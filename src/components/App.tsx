@@ -9,9 +9,6 @@ const App = (): ReactElement => {
   return (
     <Grid2 container>
       <Grid2>
-        <NavigationDrawer key='NavigationDrawer' />
-      </Grid2>
-      <Grid2>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

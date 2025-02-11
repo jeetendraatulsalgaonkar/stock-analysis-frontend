@@ -7,7 +7,7 @@ export const timeSeriesIntraday = async (symbol: string, interval: string) => {
     function: 'TIME_SERIES_INTRADAY',
     symbol,
     interval,
-    apiKey: API_KEY,
+    apikey: API_KEY,
   });
   return response.data;
 };
@@ -15,7 +15,7 @@ export const timeSeriesIntraday = async (symbol: string, interval: string) => {
 export const topGainersAndLosers = async () => {
   const response = await axiosGetInstance({
       function: 'TOP_GAINERS_LOSERS',
-      apiKey: API_KEY,
+      apikey: API_KEY,
   });
   return response.data as TopGainersAndLosers;
 };
